@@ -20,9 +20,17 @@ un número reducido de ellas también será un signo de ineficacia. Mediante vis
 Todas estas tareas idependintes, seran un emocinante y entretenido reto para mis habilidades como analista de datos ya que cada uno de los proyectos realizados y requeridos  por las empresas, requieren de cierta hablidad  de pensamineto critico y saber usar los datos en beneficio de la empresa, de esta manera abordare una a una las tareas cotidianas que un analista de datos tiene, y destacare en cda una de ellas, ya que me permitiran demostar que soy la mejor opcion que pudieron tomar a la hora de tomar decisiones importantes basandose en las recomnedaciones que proporcionare al final de cada proyecto 
 indepnediente.
 
-ES NECESARIO  CREAR UN ARCHIVO .env, para la conecciona la base de datos en el proyecto de SQL. Llenando las siguintes variables para crear el motor de busqueda
-tripleten_sql_user
-tripleten_sql_pwd
-tripleten_sql_host
-tripleten_sql_port
-tripleten_sql_db 
+ES NECESARIO  CREAR UN ARCHIVO `.env`, para la conecciona la base de datos en el proyecto de SQL. Llenando las siguintes variables para crear el motor de busqueda
+
+```
+tripleten_sql_user=""
+tripleten_sql_pwd=""
+tripleten_sql_host=""
+tripleten_sql_port=""
+tripleten_sql_db=""
+```
+
+<!-- TODO Es importante que sepas hacer merges. Hice correcciones que no tomaste en cuenta, porque no hiciste merge -->
+<!-- TODO Usa más el formateo de código para mejorar la legibilidad de tu readme. Úsalo para nombres de archivos, rutas, variables, funciones, códigos, etc -->
+<!-- TODO Falta explicar cómo ejecutar tu código para cada sección. Con qué código? Algo como: Ejecutar `python queries.py` para hacer X -->
+<!-- TODO Testeaste tu requirements.txt? A mi no me funciona -->
