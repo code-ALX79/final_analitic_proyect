@@ -23,19 +23,21 @@ engine = create_engine(connection_string, connect_args={
                        'sslmode': 'require'}, pool_size=10, max_overflow=20)
 
 # Query ----------------------------------------
-query = "SELECT * FROM public.books LIMIT 5"
-pd.io.sql.read_sql(query, con=engine)
+
+query = pd.read_sql("SELECT * FROM public.books LIMIT 5", con=engine)
+print(query)
 
 
-query_1 = """
+query_1 = pd.read_sql("""
 SELECT COUNT(*) AS libros_publicados_despues_2000
 FROM books
 WHERE publication_date > '2000-01-01';
-"""
-pd.io.sql.read_sql(query_1, con=engine)
+""", con=engine)
+
+print(query_1)
 
 
-query_2 = """
+query_2 = pd.read_sql("""
 SELECT
     b.book_id,
     b.title,
@@ -47,11 +49,12 @@ LEFT JOIN ratings r ON b.book_id = r.book_id
 LEFT JOIN reviews rv ON b.book_id = rv.book_id
 GROUP BY
     b.book_id, b.title;
-"""
-pd.io.sql.read_sql(query_2, con=engine)
+""", con=engine)
+
+print(query_2)
 
 
-query_3 = """
+query_3 = pd.read_sql("""
 SELECT 
     p.publisher, 
     COUNT(*) AS total_libros_mas_50_paginas
@@ -66,11 +69,12 @@ GROUP BY
 ORDER BY 
     total_libros_mas_50_paginas DESC
 LIMIT 1;
-"""
-pd.io.sql.read_sql(query_3, con=engine)
+""", con=engine)
+
+print(query_3)
 
 
-query_4 = """
+query_4 = pd.read_sql("""
 WITH CalificacionesPorAutor AS (
   SELECT
     a.author_id,
@@ -93,11 +97,12 @@ WHERE
 ORDER BY
   promedio_calificacion DESC
 LIMIT 1;
-"""
-pd.io.sql.read_sql(query_4, con=engine)
+""", con=engine)
+
+print(query_4)
 
 
-query_5 = """
+query_5 = pd.read_sql("""
 WITH UsuariosConMas50Calificaciones AS (
     SELECT username AS uc_username
     FROM ratings
@@ -113,5 +118,6 @@ JOIN (
     FROM reviews
     GROUP BY username
 ) AS ur ON uc.uc_username = ur.ur_username;
-"""
-pd.io.sql.read_sql(query_5, con=engine)
+""", con=engine)
+
+print(query_5)
