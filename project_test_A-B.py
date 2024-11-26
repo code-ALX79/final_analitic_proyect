@@ -24,7 +24,6 @@ from scipy import stats
 import statsmodels.stats.proportion as sm
 import itertools
 
-
 # cargar los datos
 users = pd.read_csv("final_ab_new_users.csv")
 events = pd.read_csv("final_ab_events.csv")
