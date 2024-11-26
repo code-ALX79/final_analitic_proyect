@@ -23,5 +23,6 @@ engine = create_engine(connection_string, connect_args={
                        'sslmode': 'require'}, pool_size=10, max_overflow=20)
 
 # Query ----------------------------------------
-query = "SELECT * FROM public.books LIMIT 5"
-pd.io.sql.read_sql(query, con=engine)
+
+query = pd.read_sql("SELECT * FROM public.books LIMIT 5", con=engine)
+print(query)
