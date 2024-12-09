@@ -98,6 +98,8 @@ si el reessultado de esta linea de codigo son las 5 primeras filas de nuestra ba
 code queries.py
 ```
 
+<!-- TODO: Errores de tipos de archivos corregidos, pero lo que documentaste no ejecuta tu proyecto. code solo abre visual studio code, no ejecuta ningún código. -->
+
 Despues de haber comprobado nuestro arcchivo de coneccion a la base de datos funsiona, podremos ejecutar nuestro archivo de consuktas a la tabla de datos respondiendo los siguinetes requerimientos.
 
   1.-el número de libros publicados después del 1 de enero de 2000;  query_1.
