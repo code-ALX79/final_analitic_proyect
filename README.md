@@ -49,23 +49,23 @@ from dotenv import load_dotenv()
 pueda ser ejecutado sin ningun error de dependencia y obtener los mismos resultados;Sigiendo los siguinetes pasos,
 peimero para crear el ambiente.
 
-``` Python 
+```sh 
 -m venv .venv
 ```
 se crea el ambinete VIRTUAL
 
-```Python 
+```sh 
 .venv\Scripts\activate
 ```
 se activa el ambiente virtual
 
-``` Python 
+``` sh 
 pip freeze > requirements.txt
 ```
  medianete este comado, se verificara  ver qué paquetes están instalados y sus versiones locales;
  antes de instalar el archivo de requeriminetos, lo que te ayudará a identificar posibles conflictos o dependencias no deseadas.
 
-``` Python 
+``` sh 
 pip install -r requirements.txt
 ``` 
 
@@ -78,7 +78,7 @@ DEBIDO A QUE LOS ARCHIVOS DE DATOS ESTAN EN EL MISMO DIRECTOTIO DE LOS ARCHIVOS 
  Este archivo compacta el codigo neceario para conectarse a la base de datos, desde la cual realizaremos nuestras consultas. Para su correcta ejecusion,
  sera importante, que llenemos nuestars credenciales en el arcivo de variables de ambiente .env mencionado con aterioridad. especifiicando, ademas de su usuario y comtraseña tambien la direccion del servidor de la base de datos, o Host. el numero de puerto en el que se esta ecuchando el servidor de la bse de datos, asi como el nommbre de la misma, en la estructura:
 
- ``` Python 
+ ``` txt 
 tripleten_sql_user=""
 tripleten_sql_pwd=""
 tripleten_sql_host=""
@@ -87,13 +87,14 @@ tripleten_sql_db=""
 ```
 El atchivo conectyion_t.py, cuenta con una consulta de prueba que traera las 5 primeas filas de la base de datos al ser ejecutada. Esto fue eimplementado en este archivo, comprobar su correcto funsionamiento.
 
-``` query = pd.read_sql("SELECT * FROM public.books LIMIT 5", con=engine)
+``` python
+query = pd.read_sql("SELECT * FROM public.books LIMIT 5", con=engine)
 print(query)
 ```
 si el reessultado de esta linea de codigo son las 5 primeras filas de nuestra base de datos. Entonces podremos pasar a ejecutar el siguinete archivo de datos.
 
 # 1.2 Ejecuatar el queries.py
-``` Python 
+``` sh 
 code queries.py
 ```
 
@@ -108,7 +109,7 @@ Despues de haber comprobado nuestro arcchivo de coneccion a la base de datos fun
  EN ESTE APARTADO LAS HABILIDADES CON SQL ADQUIRIDAS EN PROYECTOS Y LECIIONES SON PUESTA A PRUEBA CON REQUERIMIENTOS REALES DE UNA STARTUP, TENR UNA EXCELENTE CRECIEMINETO Y MEJORANDO EL FUNCIONAMINETO DE LA MISMA.
 
 # 2. Ejecuatr el archivo project_test_A-B.py
-  ``` Python 
+  ``` sh 
 code proyect_testA-B.py
 ```
 
@@ -125,7 +126,7 @@ y realizar un analisis expoloratorio de datos, solo asi podremos asegurarnos que
 CADA UNO DE ESTPS ITEMS TIENE VARIAS PREGUNTAS A RESPONDER, LAS CUALRES SERAN GENERADA, EXPLORADAS Y RESPONDIDAS EN EL MISMO ARCHIVO; MEDIANTE UNA DESCRIPCION EN MARKDOWN BACO CADA CELDA DE EJECUSION DEL CODIGO.
 
 # 3. Ejecutar el archivo project_telecom.py
-``` Python 
+``` sh 
 code proyect_telecom.py
 ```
 Al ejecutar este archivo de proyecto general se observara los pasos y procesos a realizar ordenados y puntualedsa medida que se van desarrolando las variables necesarias, utilizaremos el analisis exploratorio de datos EDA, y algunas graficas para obtner nuestras propias conslusiones meediante los siguinetes procesos:
