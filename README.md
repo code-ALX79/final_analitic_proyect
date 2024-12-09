@@ -131,6 +131,9 @@ CADA UNO DE ESTPS ITEMS TIENE VARIAS PREGUNTAS A RESPONDER, LAS CUALRES SERAN GE
 ``` sh 
 code proyect_telecom.py
 ```
+
+<!-- TODO: Tienes inconsistencia en los nombres. Elije o inglés o español, proyect está mal en ambos. -->
+
 Al ejecutar este archivo de proyecto general se observara los pasos y procesos a realizar ordenados y puntualedsa medida que se van desarrolando las variables necesarias, utilizaremos el analisis exploratorio de datos EDA, y algunas graficas para obtner nuestras propias conslusiones meediante los siguinetes procesos:
  
 - realizar el análisis exploratorio de datos
