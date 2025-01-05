@@ -88,7 +88,7 @@ from dotenv import load_dotenv()
  Este archivo compacta el codigo necesario para conectarse a la base de datos, desde la cual realizaremos nuestras consultas. Para su correcta ejecusion,
  sera importante que llenemos nuestras credenciales en el arcivo de variables de ambiente `.env` mencionado con aterioridad; Especifiicando ademas, de su usuario y comtraseña,tambien la direccion del servidor de la base de datos, o Host. El numero de puerto en el que se esta ecuchando el servidor de la base de datos, asi como el nommbre de la base  en la  siguiente estructura:
 
- ``` Python 
+ ``` txt 
 tripleten_sql_user=""
 tripleten_sql_pwd=""
 tripleten_sql_host=""
