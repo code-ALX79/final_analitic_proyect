@@ -84,12 +84,6 @@ pip freeze > requirements.txt
 ``` 
 Instalar dependencias desde el archivo:
 
-
-Luego se instalara el  archivo de requerimientos para trabajar con las mismas dependecnias  utilizadas al ejecutar el codigo.
-
-Deberemos primero mostar el contenido de nuestrois archivos, y  ejecutar cada uno de los estos desde el directorio de nuestro repositorio.
-  DEBIDO A QUE LOS ARCHIVOS DE DATOS ESTAN EN EL MISMO DIRECTOTIO DE LOS ARCHIVOS DE EJECUSION, ESTOS DEBERIAN LEERSE AL EJECURARLOS SIN NINGUN INCONVENIENTE.
-
 🔐 Variables de entorno
 
 Crea un archivo .env en la raíz del proyecto con las siguientes variables para conectar tu base de datos:
