@@ -1,92 +1,86 @@
-# Final Project - Tripleteen
+# data-analytics-portfolio-case
 
-En este repositorio pongo a prueba mis habilidades como analista de datos, adquiridas a lo largo de mi formación, mediante el desarrollo de un caso real de **analítica de datos aplicada**.  
+Este repositorio demuestra mis habilidades como **analista de datos**, aplicadas en un entorno real con diferentes casos de negocio.  
+Cada módulo representa un reto analítico independiente enfocado en **extracción, limpieza, análisis y comunicación de resultados** basados en datos reales de startups. 
 
 A través de varios proyectos prácticos, evaluaré diferentes **KPI** de manera individual, brindando soporte analítico de alto valor a las empresas y startups que me confiaron sus datos.
 
 ---
+## 🚀 Objetivos del proyecto
 
-## 1. Conexión a base de datos (SQL + Pandas)
+1. **Conexión a bases de datos (SQL + Pandas)**  
+   Conexión segura a una base de datos PostgreSQL real para extraer y consultar datos relacionados con el comportamiento de usuarios de una aplicación de lectura digital.
 
-En este primer proyecto, nos conectaremos a una base de datos para realizar consultas mediante **SQL**, de forma independiente al proyecto principal.  
+2. **Preprocesamiento y optimización operativa (Callmemaby)**  
+   Identificación de operadores con bajo desempeño mediante métricas clave de eficiencia y desempeño operativo.
 
-La empresa colaboradora es una **startup** que aprovechó la pandemia de **COVID-19** para desarrollar una aplicación orientada a los amantes de la lectura. Durante la cuarentena, muchas personas recurrieron a soluciones digitales que les permitieran aprovechar el tiempo libre desde casa, y esta startup fue una de ellas.  
+3. **Análisis experimental (Test A/B)**  
+   Evaluación de un test A/B abandonado por un equipo anterior.  
+   Determinar si los cambios implementados modificaron el comportamiento de los usuarios o si los resultados eran previsibles.
 
-Nos brindaron una base de datos real para analizar el comportamiento de sus usuarios y competidores.  
-Mediante **pandas** y **SQL**, generaremos resultados precisos y de alto valor para apoyar su crecimiento.
-
----
-
-## 2. Preprocesamiento de datos (Callmemaby)
-
-El segundo proyecto se enfoca en la empresa **Callmemaby**, que busca desarrollar una nueva función para brindar soporte a los supervisores, permitiéndoles acceder fácilmente a la información de los **operadores menos eficaces**.  
-
-El objetivo es optimizar la toma de decisiones mediante el análisis de métricas de desempeño operativo.
+4. **Evaluación de desempeño (Callmemaby)**  
+   Detección de operadores ineficaces a partir de KPIs específicos, visualización temporal y pruebas estadísticas de hipótesis.
 
 ---
 
-## 3. Proyecto internacional de analítica (Test A/B)
+## 🧠 Conclusiones generales
 
-En este tercer proyecto retomamos un trabajo de alcance internacional que quedó inconcluso.  
-El equipo anterior lanzó una **prueba A/B** y posteriormente abandonó el proyecto.  
+Estos proyectos integran conocimientos de:
+- Análisis exploratorio y descriptivo.
+- SQL para consultas avanzadas.
+- Python (pandas, numpy, matplotlib, seaborn, scipy).
+- Pruebas estadísticas.
+- Comunicación visual mediante dashboards interactivos (Tableau).
 
-Mediante la documentación técnica y los resultados existentes, implementaremos un **nuevo sistema de recomendaciones mejorado**, con el fin de evaluar:
-
-- Si este cambio está generando comportamientos distintos entre los usuarios.  
-- O si, por el contrario, los resultados eran previsibles y el abandono del proyecto estaba justificado.
-
----
-
-## 4. Proyecto principal (Evaluación de desempeño - Callmemaby)
-
-Este es el proyecto principal confiado por **Callmemaby**, donde se define que un operador es ineficaz si:
-
-- Tiene una gran cantidad de llamadas entrantes perdidas (internas o externas).  
-- Presenta un tiempo de espera prolongado en llamadas entrantes.  
-- Realiza pocas llamadas salientes, pese a tener esa responsabilidad.
-
-Mediante **visualizaciones temporales**, categorización de operadores y **pruebas de hipótesis estadísticas**, evaluaremos el comportamiento del equipo para identificar a los menos eficientes y proponer estrategias de mejora.
+📄 [Explicación detallada del proyecto (documento técnico)](https://1drv.ms/b/c/75c608b03a43bf35/EZuSE_xWAuZLoCc2VUamYGEBYXiPYyLEe9MVovMmdWxwOA?e=NHceOs)  
+📊 [Dashboard interactivo - Callmemaby en Tableau](https://public.tableau.com/views/DashboraddeduracinytipodellamadasCallmemaby/Dashboard1)
 
 ---
 
-## Descripción general
+## ⚙️ Requisitos del entorno
 
-Cada una de estas tareas independientes representa un reto estimulante que pondrá a prueba mis habilidades como analista de datos.  
+Antes de ejecutar los scripts, asegúrate de tener **Python 3.10+** instalado.
 
-Estos proyectos requieren **pensamiento crítico**, **precisión técnica** y **capacidad de aplicar los datos en beneficio de la empresa**.  
-Con ellos, demuestro mi capacidad para abordar tareas reales que enfrenta un analista y destacar en cada una, ofreciendo información que respalde decisiones estratégicas.
+### 1️⃣ Clonar el repositorio
 
----
+```bash
+git clone https://github.com/code-ALX79/final_analitic_proyect.git
+cd final_analitic_proyect
 
-## 🔧 Requisitos y configuración del entorno
-
-> Es importante ejecutar los siguientes comandos desde el mismo directorio donde se ha clonado este repositorio.
+- Es importante ejecutar los siguientes comandos desde el mismo directorio donde se ha clonado este repositorio.
 
 Para desplazarse al directorio del proyecto:
+
 ```sh
 cd nombre_del_directorio
+
+2️⃣ Crear y activar entorno virtual
 
 1.1 Crear un entorno virtual
 
 Se recomienda crear un entorno virtual .venv para garantizar un espacio de ejecución aislado, libre de errores de dependencia.
 
-``` sh 
- python -m venv .venv
-```
-Creacion de el ambiente VIRTUAL 
+``` sh
+# Crear entorno
+python -m venv .venv
 
-```sh 
- source .venv/Scripts/activate
-```
-Activar el entorno virtual:
+# Activar entorno (Windows)
+.venv\Scripts\activate
 
-``` sh 
-pip freeze > requirements.txt
+# Activar entorno (Linux/Mac)
+source .venv/bin/activate
 ```
- Exportar los paquetes instalados:
- 
+3️⃣ Instalar dependencias
+
 ``` sh 
 pip install -r requirements.txt
+
+```
+Si aún no existe un archivo de requerimientos, puedes generarlo así:
+ 
+``` sh 
+pip freeze > requirements.txt
+
 ``` 
 Instalar dependencias desde el archivo:
 
@@ -96,141 +90,83 @@ Luego se instalara el  archivo de requerimientos para trabajar con las mismas de
 Deberemos primero mostar el contenido de nuestrois archivos, y  ejecutar cada uno de los estos desde el directorio de nuestro repositorio.
   DEBIDO A QUE LOS ARCHIVOS DE DATOS ESTAN EN EL MISMO DIRECTOTIO DE LOS ARCHIVOS DE EJECUSION, ESTOS DEBERIAN LEERSE AL EJECURARLOS SIN NINGUN INCONVENIENTE.
 
-**1.2 Archivos y ejecución**
+🔐 Variables de entorno
 
-Dado que los archivos de datos se encuentran en el mismo directorio que los de ejecución, podrán leerse sin inconvenientes al ejecutar los scripts.
+Crea un archivo .env en la raíz del proyecto con las siguientes variables para conectar tu base de datos:
 
-🔹 Archivo conection-t.py
+``` Python 
+tripleten_sql_user="usuario"
+tripleten_sql_pwd="contraseña"
+tripleten_sql_host="host"
+tripleten_sql_port="puerto"
+tripleten_sql_db="nombre_bd"
+```
+Ejemplo de conexión en Python:
 
-Visualizar:
-``` sh
-code conection-t.py
+``` Python
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+user = os.getenv("tripleten_sql_user")
+pwd = os.getenv("tripleten_sql_pwd")
+host = os.getenv("tripleten_sql_host")
+port = os.getenv("tripleten_sql_port")
+db = os.getenv("tripleten_sql_db")
+
+engine = create_engine(f"postgresql://{user}:{pwd}@{host}:{port}/{db}")
+
 ```
 
-Ejecutar:
-```sh
+▶️ Ejecución de los módulos
+**Conexión a base de datos:**
+
+``` sh 
 python conection-t.py
 ```
-Antes de ejecutarlo, crea un archivo .env con las variables necesarias para la conexión a la base de datos:
-
-``` Python 
-tripleten_sql_user=""
-tripleten_sql_pwd=""
-tripleten_sql_host=""
-tripleten_sql_port=""
-tripleten_sql_db=""
-```
-
-Usaremos las librerías dotenv y sqlalchemy para establecer la conexión:
-
-``` Python 
-from sqlalchemy import create_engine
-```
-
-``` Python 
-from dotenv import load_dotenv()
-```
-
-Este script incluye una consulta de prueba que muestra las primeras cinco filas de la base de datos:
-
- ``` txt 
-tripleten_sql_user=""
-tripleten_sql_pwd=""
-tripleten_sql_host=""
-tripleten_sql_port=""
-tripleten_sql_db=""
-```
-El archivo conection_t.py, cuenta con una consulta de prueba que traera las 5 primeras filas de la base de datos al ser ejecutada. Esto fue implementado en este archivo,
-para comprobar su correcto funsionamiento.
-
-```Python
-query = pd.read_sql("SELECT * FROM public.books LIMIT 5", con=engine)
-print(query)
-```
-Si el resultado muestra las cinco primeras filas correctamente, la conexión es funcional.
-
-🔹 Archivo queries.py
-
-Visualizar:
+**Consultas SQL:**
 
 ``` sh 
-code queries.py
-```
-Ejecutar:
-
-``` sh
 python queries.py
+
 ```
-
-Este archivo contiene las consultas SQL necesarias para responder los siguientes requerimientos:
-
-- Número de libros publicados después del 1 de enero del 2000.
-
-- Número de reseñas de usuarios y calificación promedio por libro.
-
-- Editorial con mayor número de libros con más de 50 páginas.
-
-- Autor con la calificación promedio más alta.
-
-- Número promedio de reseñas de texto entre usuarios que calificaron más de 50 libros.
-
-En este apartado se ponen a prueba las habilidades en SQL adquiridas durante mi formación, aplicadas a un caso real de negocio.
-
-🔹 Archivo project_test_A-B.py
-
-Visualizar:
+**Test A/B internacional:**
 
 ``` sh 
-code project_test_A-B.py
-```
-Ejecutarlo:
-
-``` sh
 python project_test_A-B.py
+
 ```
-Este script retoma una prueba A/B previa, con el objetivo de detectar diferencias de comportamiento entre el grupo de control y el grupo experimental.
+**Evaluación de operadores:**
 
-Pasos principales:
-
-- Estudiar la conversión en las diferentes etapas del embudo.
-
-- Evaluar los resultados del test A/B.
-
-- Describir conclusiones basadas en el análisis exploratorio y los resultados experimentales.
-
-Cada análisis está documentado en Markdown dentro del propio script, explicando paso a paso las conclusiones obtenidas.
-🔹 Archivo project_telecom.py
-
-Visualizar:
-
-``` sh
-code project_telecom.py
-```
-Ejecutar
-:
-``` sh
+``` sh 
 python project_telecom.py
+
 ```
+🧪 Tecnologías utilizadas
 
-Este proyecto realiza un análisis completo del rendimiento de los operadores de Callmemaby, incluyendo:
+Python 3.10+
 
-- Análisis exploratorio de datos (EDA).
+- Pandas
 
-- Identificación de operadores ineficaces.
+- NumPy
 
-- Pruebas de hipótesis estadísticas.
+- Matplotlib / Seaborn
 
-Las visualizaciones utilizadas son interactivas para facilitar la interpretación de los resultados.
-El archivo está estructurado de manera secuencial y clara para seguir el desarrollo analítico paso a paso.
+- SQLAlchemy
 
-🧠 Conclusión
+- Dotenv
 
-Este conjunto de proyectos demuestra mi capacidad para desarrollar análisis de datos aplicados, desde la conexión y procesamiento de información hasta la interpretación y comunicación de resultados.
+- SciPy
 
-Cada módulo del repositorio representa un ejemplo práctico de cómo la analítica puede generar valor tangible para una organización.
+- Tableau
 
-En el siguiente enlace se podrá observar una explicación detallada del desarrollo y resolución del proyecto, especificando los resultados obtenidos en el mismo:
-https://1drv.ms/b/c/75c608b03a43bf35/EZuSE_xWAuZLoCc2VUamYGEBYXiPYyLEe9MVovMmdWxwOA?e=NHceOs
+🤝 Contribución
 
-En el siguiente enlace se podrá observar un dashboard sobre la duración de llamadas, con varios gráficos explicativos que permiten filtrar y obtener una visión más precisa sobre este aspecto importante:
-https://public.tableau.com/views/DashboraddeduracinytipodellamadasCallmemaby/Dashboard1?:language=es-ES&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+**1. Haz un fork del repositorio.**
+
+**2. Crea una nueva rama: git checkout -b feature/nueva-funcionalidad.**
+
+**3. Realiza tus cambios y commitea: git commit -m "Descripción del cambio."**
+
+**4. Envía un pull request para revisión.**
