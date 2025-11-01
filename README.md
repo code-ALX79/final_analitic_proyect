@@ -65,7 +65,7 @@ Se recomienda crear un entorno virtual .venv para garantizar un espacio de ejecu
 python -m venv .venv
 
 # Activar entorno (Windows)
-.venv\Scripts\activate
+. ./.venv/Scripts/activate
 
 # Activar entorno (Linux/Mac)
 source .venv/bin/activate
